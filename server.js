@@ -113,9 +113,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get('/', function(req, res){
   db.users.find(function (err, docs) {
     console.log(docs);
-    res.render('index', {
-      title: 'Customers',
-      users: docs
+    res.render('home', {
+      
     });
   })
 });
@@ -135,7 +134,7 @@ app.post('/users/add', function(req, res){
   response.redirect('/index')
 })
 */
-
+/*
 app.post('/users/add', upload.any(), function(req, res){
 
   req.checkBody('first_name', 'First Name is Required').notEmpty();
@@ -175,7 +174,7 @@ app.delete('/users/delete/:id', function(req, res){
     res.redirect('/');
   });
 });
-
+*/
 app.listen(3000, function(){
   console.log('Server started on port 3000...');
 });
