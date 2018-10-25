@@ -1,0 +1,32 @@
+<% include partials/header %>
+  <h1>Add Customer</h1>
+  <% if(errors){ %>
+    <ul>
+    <% errors.forEach(function(error){ %>
+      <li><%= error.msg %></li>
+    <% }) %>
+    </ul>
+  <% } %>
+  <form method="POST" action="/users/add" enctype="multipart/form-data">
+    <label for="">First Name</label><br>
+    <input type="text" name="first_name" value="">
+    <br>
+    <label for="">Last Name</label><br>
+    <input type="text" name="last_name" value="">
+    <br>
+    <label for="">Email</label><br>
+    <input type="text" name="email" value=""><br>
+    <label for="">File Upload</label>:
+    <input type="file" name="filenya" id="fileToUpload">
+    <br><br>
+    <input type="submit" name="" value="Submit">
+  </form>
+  <h1><%= title %></h1>
+  <ul>
+    <% users.forEach(function(user){ %>
+      <li>
+        <%= user.first_name %> <%= user.last_name %> - <a href="#" class="deleteUser" data-id="<%= user._id %>">Delete</a>
+      </li>
+    <% }) %>
+  </ul>
+<% include partials/footer %>

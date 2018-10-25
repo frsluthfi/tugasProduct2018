@@ -1,0 +1,55 @@
+<% include partials/header %>
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="">Registrasi Akun</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="" action="index.html" method="post">
+              <label for="fullName">Nama Lengkap</label></br>
+              <input type="text" class="form-control" name="fullName" value=""></input></br>
+              <label for="birth">Tanggal Lahir</label></br>
+              <input type="date" class="form-control" name="birth" value=""></input></br>
+              <label for="email">Alamat Email</label></br>
+              <input type="email" class="form-control" name="email" value="" placeholder="Email digunakan untuk mengakses akun"></input></br>
+              <label for="password">Password</label></br>
+              <input type="password" class="form-control" name="password" value=""></input></br>
+              <input type="password" class="form-control" name="rePassword" value="" placeholder="Masukkan Kembali Password"></input></br>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+            <button type="submit" class="btn btn-primary">Daftar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="loginLeft" class="col-md-5">
+        <img id="loginPic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Polri_Logo.svg/1097px-Polri_Logo.svg.png" alt="">
+      </div>
+      <div class="col-md-2">
+      </div>
+      <div id="loginRight"class="col-md-5">
+        <div id="greetHome">
+          <center><h2 center>Selamat Datang </br></h2>
+          <h1>SIM-STNK ONLINE</h1></center>
+        </div>
+        <div id="divLogin" class="shadow p-3 mb-5 bg-white rounded">
+          <form>
+            <label for="email">Email</label></br>
+            <input id="inputEmailLogin"class="form-control" type="email" name="email" value=""></input>
+            <label for="password">Password</label></br>
+            <input class="form-control" type="password" name="password" value=""></input></br>
+            <button id="btnLogin1" type="submit" class="btn btn-primary" name="button">Masuk</button>
+            <button id="btnLogin2" type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalLogin" name="button">Daftar Akun</button>
+          </form>
+        </div>
+      </div>
+    </div>
+<% include partials/footer %>

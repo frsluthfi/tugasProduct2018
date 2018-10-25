@@ -1,0 +1,63 @@
+<% include partials/header %>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Polri_Logo.svg/1097px-Polri_Logo.svg.png" style="width:40px;"></img>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Registrasi
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="regisSIM.html">Registrasi SIM</a>
+          <a class="dropdown-item" href="regis">Registrasi STNK</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pajak Kendaraan</a>
+      </li>
+    </ul>
+    <button id="btnLogin1" type="submit" class="btn btn-secondary" name="button" style="width:90px;">Logout</button>
+  </div>
+</nav>
+
+  <div class="header">
+
+  </div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="container">
+      <div id="jumboKiri" class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h2 class="judulKolomHome">SIM</h2>
+        </div>
+      </div>
+      <h2><a id="kontenJumboHome" href="sim.html">Lihat SIM Saya</a><br></h2>
+      <p>Lihat SIM Anda. Anda tidak perlu lagi membawa SIM ke mana-mana, karena SIM yang tersedia pada web ini adalah link yang legal.</p><br>
+      <h2><a id="kontenJumboHome" href="regisSIM.html">Registrasi SIM</a><br></h2>
+      <p>Registrasi segera SIM Anda. Anda akan mendapatkan nomor antrian dan hari Anda diharuskan datang. Anda juga dapat melakukan registrasi ulang SIM Anda jika telah mendekati <a href="#">kadaluarsa SIM</a>.</p><br>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="container">
+      <div id="jumboKanan" class="jumbotron jumbotron-fluid">
+        <h2 class="judulKolomHome">STNK</h2>
+      </div>
+      <h2><a id="kontenJumboHome" href="stnk.html">Lihat STNK</a><br></h2>
+      <p>Lihat STNK kendaraan. Anda dapat melihat STNK kendaraan kalian di sini. STNK kendaraan meliputi data kendaraan beserta data pajak kendaraan.</p><br>
+      <h2><a id="kontenJumboHome" href="regisSTNK.html">Registrasi STNK</a><br></h2>
+      <p>Registrasi STNK Anda. Anda akan diberi nomor antrian dan Anda dapat datang pada jam yang telah diberikan. Anda dapat juga memperpanjang STNK dengan membawa serta kendaraan Anda saat registrasi ulang.</p><br>
+      <h2><a id="kontenJumboHome" href="#">Pajak Kendaraan</a><br></h2>
+      <p>Bayar pajak kendaraan Anda segera. Pembayaran pajak hanya dapat dilakukan satu bulan sebelum pajak kendaraan habis.</p><br>
+    </div>
+  </div>
+</div>
+
+<% include partials/footer %>
